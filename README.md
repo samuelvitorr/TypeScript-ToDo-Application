@@ -1,5 +1,5 @@
 <p align="center">👋 Hey! I'm Samuel Vitor, a brazilian programmer.</p>
-<p align="center"><a href="https://spring-boot-3-todo-application.onrender.com/"><img src="https://img.shields.io/badge/website-742273?style=for-the-badge&logoColor=F2F2F2&logo=twitter"/></a>
+<p align="center"><a href="https://typescript-todo-application.onrender.com/"><img src="https://img.shields.io/badge/website-742273?style=for-the-badge&logoColor=F2F2F2&logo=twitter"/></a>
 <p align="center"><a href="https://twitter.com/samuell_vitoorr"><img src="https://img.shields.io/badge/X-742273?style=for-the-badge&logoColor=F2F2F2&logo=twitter"/></a>
 <a href="https://www.linkedin.com/in/samuel-vitor-362713214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://img.shields.io/badge/linkedin-742273?style=for-the-badge&logoColor=F2F2F2&logo=linkedin"/></a>
 <a href="https://www.instagram.com/samuell_vitoorr?igsh=MXc0ZXViZGxuNWR3eA=="><img src="https://img.shields.io/badge/instagram-742273?style=for-the-badge&logoColor=F2F2F2&logo=instagram"/></a>
