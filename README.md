@@ -13,9 +13,9 @@
 - :man: Users can `create`, `read`, `update`, `delete`, and `filter` tasks by status.
 - :bar_chart: Includes progress bars and task counters for better task management.
 
-<div style="display: flex; flex-direction: row; justify-content: space-between; gap: 10px;">
-  <img src="./readme-assets/loginImage.png" width="50%"/>
-  <img src="./readme-assets/pageImage.png" width="50%"/>
+<div style="display: flex; flex-direction: row; gap: 10px;">
+  <img src="./readme-assets/loginImage.png" width="100%"/>
+  <img src="./readme-assets/pageImage.png" width="100%"/>
 </div>
 
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
