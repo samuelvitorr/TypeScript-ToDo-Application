@@ -7,37 +7,42 @@
 <!-- RAINBOW LINE TOP -->
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
-## **Next.js + TypeScript To-Do List Application**
+# **Next.js + TypeScript To-Do List Application**
 
-- :computer: Modern fullstack To-Do List application using **Next.js**, **TypeScript**, **Prisma**, and **Tailwind CSS**.  
-- :white_check_mark: Users can create, read, update, delete, and filter tasks by status.  
+- :link: Modern fullstack To-Do List application using **Next.js**, **TypeScript**, **Prisma**, and **Tailwind CSS**.
+- :man: Users can `create`, `read`, `update`, `delete`, and `filter` tasks by status.
 - :bar_chart: Includes progress bars and task counters for better task management.
+
+<div style="display: flex; gap: 10px;">
+  <img src="./readme-assets/loginImage.png" width="100%"/>
+  <img src="./readme-assets/pageImage.png" width="100%"/>
+</div>
 
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
 ## Technologies Used
 
 <details>
-  <summary>🧮 Backend</summary>
+  <summary>📚 Backend</summary>
   <div>
     <samp>
-      <p align="left">
-        - Next.js 15
-        - TypeScript 5
-        - Prisma ORM
-        - PostgreSQL
+      <p align="center">
+        <img src="https://img.shields.io/badge/Next.js-1e1e2e?&style=for-the-badge&logo=Next.js&logoColor=cba6f7"/>
+        <img src="https://img.shields.io/badge/TypeScript-1e1e2e?&style=for-the-badge&logo=TypeScript&logoColor=cba6f7"/>
+        <img src="https://img.shields.io/badge/Prisma-1e1e2e?&style=for-the-badge&logo=Prisma&logoColor=cba6f7"/>
+        <img src="https://img.shields.io/badge/PostgreSQL-1e1e2e?&style=for-the-badge&logo=PostgreSQL&logoColor=cba6f7"/>
       </p>
     </samp>
   </div>
 </details>
 
 <details>
-  <summary>🧮 Frontend</summary>
+  <summary>📚 Frontend</summary>
   <div>
     <samp>
-      <p align="left">
-        - Tailwind CSS
-        - React Components
+      <p align="center">
+        <img src="https://img.shields.io/badge/Tailwind-1e1e2e?&style=for-the-badge&logo=Tailwind%20CSS&logoColor=cba6f7"/>
+        <img src="https://img.shields.io/badge/ReactJs-1e1e2e?&style=for-the-badge&logo=React&logoColor=cba6f7"/>
       </p>
     </samp>
   </div>
@@ -46,65 +51,84 @@
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
 ## Methodology
-Sistema de roteamento baseado em ``arquivos``, onde cada rota é automaticamente gerada a partir da estrutura de arquivos dentro das pastas pages ou app. Suporta ``Server-Side Rendering`` (SSR) e ``Static Site Generation`` (SSG), permitindo otimização de ``performance`` e melhor ``experiência do usuário``. Além disso, conta com ``tipagem estática`` fornecida pelo TypeScript, garantindo maior segurança e manutenção do código.
 
+This project uses a file-based routing system, where routes are automatically generated from the structure of the `pages` or `app` folders. It supports `Server-Side Rendering` (SSR) and `Static Site Generation` (SSG), ensuring optimized performance and a `smooth user experience`. Built with TypeScript, it benefits from `static typing` for enhanced code safety, `readability`, and `maintainability`.
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
 ## Project Structure
+
 ```bash
 src/
 ├─ app/ # Layouts e páginas principais
 │ ├─ layout.tsx
-│ └─ page.tsx
-├─ task/ # Páginas e ações de tarefas
 │ ├─ page.tsx
-│ └─ actions/
-│ ├─ get-tasks-from-bd.ts
+│ ├─ task/ # Páginas de tarefas
+│ │ └─ page.tsx
+│ └─ __tests__/ # Testes de integração
+│ ├─ page.test.tsx
+│ └─ task-page.test.tsx
+├─ actions/ # Ações server-side (Next.js Server Actions)
 │ ├─ add-task.ts
 │ ├─ delete-task.ts
 │ ├─ edit-task.ts
 │ ├─ toggle-done.ts
-│ └─ clear-completed-tasks.ts
+│ ├─ user.ts
+│ ├─ get-tasks-from-bd.ts
+│ ├─ clear-completed-tasks.ts
+│ └─ authcontext.tsx
+│ └─ __tests__/ # Testes unitários para ações
+│ ├─ add-task.test.ts
+│ ├─ delete-task.test.ts
+│ ├─ edit-task.test.ts
+│ ├─ toggle-done.test.ts
+│ └─ user.test.ts
 ├─ components/ # Componentes reutilizáveis
 │ ├─ edit-task.tsx
 │ ├─ filter.tsx
 │ └─ task.tsx
-├─ utils/ # Funções utilitárias
-│ ├─ prisma.ts
+│ └─ __tests__/ # Testes unitários para componentes
+│ ├─ edit-task.test.tsx
+│ └─ filter.test.tsx
+├─ lib/        # Código compartilhado
+│ ├─ prisma.ts # Cliente Prisma
 │ └─ utils.ts
-├─ lib/ # Código compartilhado e UI
-│ ├─ utils.ts
-│ ├─ components/
-│ └─ ui/
-│ ├─ button.tsx
-│ ├─ card.tsx
-│ ├─ input.tsx
-│ └─ badge.tsx
-└─ authcontext.tsx # Contexto de autenticação
+├─ utils/ # Funções utilitárias
+│ └─ prisma.ts
+└─ globals.d.ts # Tipos globais
 ```
-<details>
-  <summary>🧮 Testing</summary>
-  <div>
-    <samp>
-      <p align="left">
-        Ainda em desenvolmento
-      </p>
-    </samp>
-  </div>
-</details>
 
----
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+## Tests
+
+Tests are implemented using `Jest` and `@testing-library/react` to ensure the project's reliability through both `unit` and `integration` testing.
+**Test structure:** Organized by type, with unit tests focusing on `components` and isolated `functions`, and integration tests covering complete `system flows`.
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
 ## How to Use
+
 1. Clone the repository.
 2. npm install
-3. Set up environment variables in .env 
+3. Set up environment variables in .env
+
 ```bash
   DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE_NAME"
 ```
-4. npx prisma migrate dev 
-5. Access the application at `http://localhost:8080`
 
+4. npx prisma migrate dev
+5. npm run dev
+6. Access the application at `http://localhost:3000`
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+## Testing
+
+- Run all tests: `npm test`
+- Run tests with coverage: `npm test -- --coverage`
+- Test structure: Unit tests for actions and components, integration tests for full flows
 
 <!-- RAINBOW LINE TOP -->
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
-<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/banner-header.gif"> 
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/banner-header.gif">

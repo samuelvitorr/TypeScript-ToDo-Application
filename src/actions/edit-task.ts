@@ -2,31 +2,16 @@
 
 import { prisma } from "@/lib/prisma"
 
-type EditTaskProps = {
-  idTask: string
-  newTask: string
-  userId: string
-}
-
-export async function editTask({ idTask, newTask, userId }: EditTaskProps) {
-  if (!idTask || !newTask || !userId) return null
-
+export async function editTask(id: string, task: string) {
   try {
-    const updated = await prisma.task.updateMany({
-      where: {
-        id: idTask,
-        userId,
-      },
-      data: {
-        task: newTask,
-      },
-    })
-
-    if (updated.count === 0) return null
-
-    return updated
+    const updated = await prisma.task.update({
+      where: { id },
+      data: { task },
+    });
+    return updated;
   } catch (error) {
-    console.error(error)
-    return null
+    console.error(error);
+    return null;
   }
 }
+
